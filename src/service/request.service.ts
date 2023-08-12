@@ -23,7 +23,7 @@ export class RequestService<T> {
         headers = new HttpHeaders();
         headers.set('Authorization', `Bearer ${token}`);
       }
-      const httpRequest = new HttpRequest(method, `${urlBase}/${uri}`, body, {
+      const httpRequest: any = new HttpRequest(method, `${urlBase}/${uri}`, body, {
         headers: headers,
       });
 

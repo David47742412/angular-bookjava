@@ -1,3 +1,3 @@
 export const environment = {
-  host_api: 'https://rickandmortyapi.com/',
+  host_api: 'http://localhost:3000',
 };

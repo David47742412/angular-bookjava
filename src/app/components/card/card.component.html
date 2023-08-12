@@ -1,0 +1,11 @@
+<mat-card class="card-custom" appearance="outlined">
+  <mat-card-title class="text-center mb-2">{{ title }}</mat-card-title>
+  <mat-card-content>{{ description }}</mat-card-content>
+  <mat-card-footer class="text-center mt-2">
+    <div>
+      <p>Categoria: {{ category }}</p>
+      <button mat-button color="primary" (click)="onUpdate(id)" class="mb-2">editar</button>
+      <button mat-button color="primary" (click)="onDeleted(id)" class="mb-2">eliminar</button>
+    </div>
+  </mat-card-footer>
+</mat-card>

@@ -1,1 +1,5 @@
-<p>home works!</p>
+<button mat-button class="btn-new-book">Nuevo Libro</button>
+<ng-container *ngFor="let book of books">
+  <book-card [id]="book.bookid" [title]="book.title" [description]="book.description"
+             [category]="book.categoryname"></book-card>
+</ng-container>
